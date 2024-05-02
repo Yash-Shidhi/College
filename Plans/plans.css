@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper11 {
+    background: linear-gradient(to bottom right,rgb(159, 198, 220), rgb(236, 217, 162));
+    display:flex;
+    flex-direction: column;
+}
+.container1B{
+    margin-left: 19%;
+}
+.nav-item{
+    margin-left: 2%;
+}
+.logo1 img{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 160px;
+    margin-top: -10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% -0.6% 0%;
+    height:180px;
+    padding: 18px;
+    padding-bottom: 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    position: relative;
+    background-image: url('backg.jpg');
+}
+.head{
+    margin-top: 10px;
+    color:black;
+    font-weight:bolder;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+.type{
+    height: 50px;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('backg.jpg'); */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background-color: rgb(169, 169, 169); */
+    background-color: rgb(143, 161, 172);
+}
+/* .bg{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('backg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+.planDetails {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1500px;
+    border-radius: 6px;
+    /* background-color:rgb(181, 181, 181); */
+    background-image: url('backg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.planDetails .plan {
+    padding: 30px 20px;
+    text-align: center;
+    width: 28%;
+    box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.4);
+    margin: 15px;
+}
+.planDetails .plan:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.planDetails .plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.planDetails .plan p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+
+.planDetails .plan .button {
+    display: block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.planDetails .plan.featured {
+    background-color: #e0e0e0;
+    border-right: 2px solid #007bff;
+} 
+
+.autoType{
+    text-align: center;
+    font-weight: bolder;
+    color: #141e30;
+}
+.container8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:3px;
+    height:100px;
+    font-size: large;
+    background-color:rgb(12, 80, 125);
+    
+}
+
+.container9{
+    justify-content: center;
+    align-items: center;
+    height:200%;
+    font-size: large;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-right: 12px;
+    background-color: rgb(12, 80, 100);
+    margin-top: 2px;
+    color: white;
+
+}
+
+
+

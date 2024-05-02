@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .popup{
+            width: 400px;
+            height: 50vh;
+            background:#fff;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column ;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+        }
+        #tick{
+            width: 100px;
+            margin:-50px 0 50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-family:sans-serif;
+            font-weight: 400;
+        }
+        #ok{
+            animation: 1.5s ease infinite alternate running shimmer;
+            background-color: rgb(49, 232, 82);
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size:larger;
+            font-weight: bolder;
+            line-height: 24px;
+            padding: 12px 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+            <img src="thumbnail1.jpg" id="tick">
+            <div class="content"><h2>Payment Successfull!</h2>
+                <p>We have Successfully received your Payment <br> The receipt has been sent to your registered email</p>
+                <h4>Thanks and have a nice day</h4>
+                <button id="ok">OK</button>
+            </div> 
+    </div>
+</body>
+</html>

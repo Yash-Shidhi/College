@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifeguard Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+      }
+      header {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        background-color: rgba(169, 169, 169, 0.399);
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 15px;
+        margin: 10px;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .btn {
+        margin: 10px;
+        padding: 15px 45px;
+        background-image: linear-gradient(
+          to right,
+          #f46b45 0%,
+          #eea849 51%,
+          #f46b45 100%
+        );
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 10px;
+
+        transition: all 0.3s ease;
+      }
+
+      a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .btn:hover {
+        transform: scale(1.05);
+      }
+      .footer {
+        background-color: rgba(169, 169, 169, 0.399);
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .footer i {
+        color: #f00000;
+      }
+      .footer h4 {
+        margin-top: 5px;
+      }
+      @media screen and (min-width: 768px) {
+        main {
+          padding: 20px 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Lifeguard Solutions</h1>
+    </header>
+    <main>
+      <div>
+        <img src="./home.png" alt="image" />
+      </div>
+      <div class="btn-container">
+        <button class="btn"><a href="./signup.html">New User</a></button>
+        <button class="btn"><a href="../LOGIN/login.html">Login</a></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <i class="fas fa-heart"></i>
+      </div>
+      <div>
+        <h4>Made In India</h4>
+      </div>
+    </footer>
+  </body>
+</html>

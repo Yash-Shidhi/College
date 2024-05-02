@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper11 {
+  background: linear-gradient(
+    to bottom right,
+    rgb(159, 198, 220),
+    rgb(236, 217, 162)
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1A,
+.container1B,
+.container1C {
+  display: flex;
+  align-items: center;
+}
+
+.container1C {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .container1C {
+    display: flex;
+  }
+}
+.picture-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.picture-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.picture-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.picture-title {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.picture-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item img {
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.info-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-section a:hover {
+  text-decoration: underline;
+}
+
+.info {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.copyright-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  background-image: linear-gradient(135deg, #f0f0f0, #ffffff);
+}
+
+.copyright-content {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-email {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  font-style: italic;
+}

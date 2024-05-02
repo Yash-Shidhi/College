@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="claim.css"> 
+</head>
+<body>
+     <div class="container">
+        <form action="" id="form1">
+            <h3>Personal Details </h3>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <input type="number" name="age" id="age" placeholder="Age">
+            <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <div class="btn-box">
+                <button type="button" id="next1">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="form2">
+            <h3>Policy Details </h3>
+            <select name="plan" id="plan">
+                <option value="selectplan">Select Your Plan</option>
+                <option value="Jeevan Jyoti">Jeevan Jyoti</option>
+                <option value="Jeevan Umang">Jeevan Umang</option>
+                <option value="Jeevan Anand">Jeevan Anand</option>
+                <option value="Jeevan Labh">Jeevan Labh</option>
+                <option value="Jeevan Tarun">Jeevan Tarun</option>
+                <option value="Jeevan Lakshay">Jeevan Lakshay</option>
+                <option value="Jeevan Shanti">Jeevan Shanti</option>
+                <option value="Anmol Jeevan">Anmol Jeevan</option>
+                <option value="Money Back">Money Back</option>
+                <option value="Amulya Jeevan">Amulya Jeevan</option>
+            </select>
+            <input type="text" name="policy" id="policy" placeholder="Policy Number">
+            <input type="number" name="sum" id="sum" placeholder="Sum Assured">
+            <input type="number" name="term" id="term" placeholder="Term (in years)">
+            <input type="text" name="nominee" id="nominee" placeholder="Nominee Name">
+           
+            <input type="file" id="upload">
+            <p style="padding-left: 2px;">Upload Policy Bond</p>
+
+            <div class="btn-box">
+                <button type="button" id="back1">Back</button>
+                <button type="button" id="next2">Next</button>
+            </div>
+        </form>
+
+        <form action="" id="form3">
+            <h3>Medical Details </h3>
+            <select name="cause" id="cause">
+                <option value="choose">Select Cause of Death</option>
+                <option value="natural">Natural</option>
+                <option value="accidental">Accidental</option>
+            </select>
+            <input type="text" id="hospital" placeholder="Name of Hospital">
+
+
+
+            <div class="btn-box">
+                <button type="button" id="back2">Back</button>
+                <button>Submit</button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+     </div>
+     <script>
+        var form1=document.getElementById('form1');
+        var form2=document.getElementById('form2');
+        var form3=document.getElementById('form3');
+
+        var next1=document.getElementById('next1');
+        var next2=document.getElementById('next2');
+        var back1=document.getElementById('back1');
+        var back2=document.getElementById('back2');
+
+        var progress=document.getElementById('progress');
+        
+        next1.addEventListener('click',function(){
+            form1.style.left='-450px';
+            form2.style.left='40px';
+            progress.style.width='240px'
+        })
+        
+        back1.addEventListener('click',function(){
+            form1.style.left='40px';
+            form2.style.left='450px';
+            progress.style.width='120px'
+        })
+
+        next2.addEventListener('click',function(){
+            form2.style.left='-450px';
+            form3.style.left='40px';
+            progress.style.width='360px'
+        })
+        back2.addEventListener('click',function(){
+            form2.style.left='40px';
+            form3.style.left='450px';
+            progress.style.width='240px'
+        })
+        
+        
+     </script>
+</body>
+</html>

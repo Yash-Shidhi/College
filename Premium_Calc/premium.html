@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="premium.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <div class="container-fluid contains">
+        <form id="myForm">
+            <!-- BOX1 -->
+            <div class="box1">
+            <h3 class="text-primary-emphasis">Premium Calculator</h3>
+            <select class="form-select border border-dark mb-2 text-primary-emphasis" aria-label="Default select example" id="select">
+                <option value="selectplan">Select Your Plan</option>
+                <option value="Jeevan Jyoti">Jeevan Jyoti</option>
+                <option value="Jeevan Umang">Jeevan Umang</option>
+                <option value="Jeevan Anand">Jeevan Anand</option>
+                <option value="Jeevan Labh">Jeevan Labh</option>
+                <option value="Jeevan Tarun">Jeevan Tarun</option>
+                <option value="Jeevan Lakshay">Jeevan Lakshay</option>
+                <option value="Jeevan Shanti">Jeevan Shanti</option>
+                <option value="Anmol Jeevan">Anmol Jeevan</option>
+                <option value="Money Back">Money Back</option>
+                <option value="Amulya Jeevan">Amulya Jeevan</option>
+            </select>
+            <div class="container-fluid form-floating  p-1 mb-2">
+                <input type="text" class="form-control border border-dark" id="sum" placeholder="589574387" required>
+                <label for="sum" class="text-primary-emphasis">Sum Assured</label>
+            </div>
+            <div class="container-fluid form-floating  p-1 mb-2">
+                <input type="number" class="form-control border border-dark" id="term" placeholder="10" required>
+                <label for="term" class="text-primary-emphasis">Policy Term</label>
+            </div>
+            <div class="container-fluid form-floating  p-1 mb-2">
+                <input type="number" class="form-control border border-dark" id="mobile" placeholder="9835381345" required>
+                <label for="mobile" class="text-primary-emphasis">Mobile Number</label>
+            </div>
+            <div class="container-fluid form-floating  p-1 mb-3">
+                <input type="email" class="form-control border border-dark" id="email" placeholder="aakash@gmail.com" required>
+                <label for="email" class="text-primary-emphasis">Email address</label>
+            </div>
+            <div class="container-fluid form-floating  p-1 mb-2">
+                <input type="date" class="form-control border border-dark" id="dob" placeholder="DOB">
+                <label for="dob" class="text-primary-emphasis">Date Of Birth</label>
+            </div>
+            <div class="radioCheck">
+                <p class="fw-semibold">Smoking Status</p>
+                <div class="form-check">
+                    <input class="form-check-input border border-dark" type="radio" name="smok" id="smoke" value="yes">
+                    <label class="form-check-label fw-semibold" for="smoke">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-dark" type="radio" name="smok" id="smoke" value="no">
+                    <label class="form-check-label fw-semibold" for="smoke">
+                        No
+                    </label>
+                </div>
+            </div>
+            
+            <div class="container-fluid form-floating  p-1 mb-2">
+                <input type="file" class="form-control border border-dark fw-semibold" id="bond" placeholder="policybond">
+                <label for="bond" class="text-primary-emphasis">Upload Your Policy Bond</label>
+            </div>
+            <div class="radioCheck">
+                <p class="fw-semibold">Frequency</p>
+                <div class="form-check">
+                    <input class="form-check-input border border-dark" type="radio" name="freq" id="frequency" value="quarter">
+                    <label class="form-check-label fw-semibold" for="frequency">
+                        Quarterly
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-dark" type="radio" name="freq" id="frequency" value="half">
+                    <label class="form-check-label fw-semibold" for="frequency">
+                        Half Yearly
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input border border-dark" type="radio" name="freq" id="frequency" value="year">
+                    <label class="form-check-label fw-semibold" for="frequency">
+                        Yearly
+                    </label>
+                </div>
+            </div>
+                <button type="submit" id="submit" class="container btn bg-success btn-lg text-white fw-bolder">Calculate</button>
+            </div></form>
+        
+            <!-- BOX2 -->
+            <div class="box2">
+                <p style="padding-left: 35%;" class="fw-bolder text-primary-emphasis fs-4">RESULTS</p>
+                <p id="premiumResult" class="fw-bolder text-primary-emphasis"></p>
+                <div class="box21">
+                    <button type="button" id="back" class="btn btn-danger fw-semibold">Go Back</button>
+                    <button type="button" id="now" class="btn btn-success fw-sembold">Pay Now</button>
+                    <button type="button" class="btn btn-info fw-semibold" >Pay Later</button>
+                </div>
+            </div>
+            
+            <!-- BOX3 -->
+            <div class="box3">
+                <div class="boxA">
+                    <h3>Card Details</h3>
+                    <div class="mb-3">
+                        <label for="cardName" class="form-label">Name on Card</label>
+                        <input type="text" class="form-control" id="cardName" placeholder="Cardholder Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Credit/Debit Card Number</label>
+                        <input type="number" class="form-control" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx">
+                    </div>
+                    <div class="box31">
+                        <div class="mb-3">
+                            <label for="expiry" class="form-label">Expiry</label>
+                            <input type="text" class="form-control" id="expiry" placeholder="MM / YY">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="number" class="form-control" id="cvv" placeholder="CVV/CVC">
+                        </div>
+                    </div>
+                    <div class="box32">
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile Number</label>
+                            <input type="number" class="form-control" id="mobile" placeholder="Enter Mobile Number">
+                        </div>
+                        <button type="button" id="back" class="btn btn-danger mb-3">OTP</button>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input type="text" class="form-control" id="otp" placeholder="123456">
+                        <label for="otp">Enter OTP</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amnt" class="form-label">Amount</label>
+                        <input type="number" class="form-control" id="amnt" placeholder="Enter Amount">
+                    </div>
+                    <button id="confirm" class="btn btn-success">Confirm Payment</button>
+                    <button id="cancel" class="btn btn-danger">Cancel Payment</button>
+                </div>
+                <div class="boxB">
+                    <p>Accepted Cards</p>
+                    <div class="boxB1">
+                        <img src="rupay.avif" height="50px" width="80px">
+                        <img src="visaGold.webp" height="50px" width="80px">
+                        <img src="mastercard.png" height="50px" width="80px">
+                    </div>
+                    <img src="QR.jpg" alt="" height="200px" width="200px">
+                    <p>Scan QR to Pay Using UPI</p>
+                    <div class="boxB2"></div>
+                    <img src="gpay.jpeg" alt="" height="50px" width="50px">
+                    <img src="paytm.png" alt="" height="50px" width="50px">
+                    <img src="phonepe.png" alt="" height="50px" width="50px">
+                    <img src="amazon.jpeg" alt="" height="50px" width="50px">
+                </div>
+            </div>
+
+            <!-- Popup -->
+            <div class="popup">
+                <img src="thumbnail1.jpg" id="tick">
+                <div class="content"><h2>Payment Successfull!</h2>
+                    <p>We have Successfully received your Payment <br> The receipt has been sent to your registered email</p>
+                    <h4>Thanks and have a nice day</h4>
+                    <button id="ok">OK</button>
+                </div> 
+        </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="premium.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
